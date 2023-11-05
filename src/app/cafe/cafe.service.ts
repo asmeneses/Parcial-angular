@@ -9,7 +9,8 @@ import { environment } from 'src/environments/environment';
   providedIn: 'root'
 })
 export class CafeService {
-  private apiUrl = environment.baseUrl + 'cafes.json';
+
+  private apiUrl: string = environment.baseUrl + 'cafes';
   
   constructor(private http: HttpClient) { }
 
