@@ -10,7 +10,7 @@ import { environment } from 'src/environments/environment';
 })
 export class CafeService {
 
-  private apiUrl: string = environment.baseUrl + 'cafes';
+  private apiUrl: string = environment.baseUrl;
   
   constructor(private http: HttpClient) { }
 
