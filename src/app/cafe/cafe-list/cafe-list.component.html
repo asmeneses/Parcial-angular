@@ -27,6 +27,12 @@
             <td>{{ cafe.tipo }}</td>
             <td>{{ cafe.region }}</td>
           </tr>
+          <tr class="cafe" *ngFor="let cafe of cafes">
+            <th class="id" scope="row">{{ cafe.id }}</th>
+            <td class="nombre">{{ cafe.nombre }}</td>
+            <td class="tipo">{{ cafe.tipo }}</td>
+            <td class="region">{{ cafe.region }}</td>
+          </tr>
         </tbody>
       </table>
       <div id="total-variedades">
